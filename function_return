@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# using the return command in a function
+
+function fun{
+	read -p "Enter a value:" value
+	return $[ $value * 2 ]
+}
+
+fun
+echo "The new value is $?"
